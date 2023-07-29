@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Assignment 1</title>
+</head>
+<body bgcolor = "powderblue">
+<center>
+<h1>Login Form</h1>
+<form>
+	<label>username :</label>
+	<input type = "text" id = "uname" name = "text"><br/><br/>
+	<label>password :</label>
+	<input type = "password" id = "pass" name = "password" maxlength = "8"><br/><br/>
+	<button type = "submit" onclick = "checklogin()">Submit</button>
+</center>
+</form>
+<script>
+	function checklogin()
+	{
+		var u = document.getElementById('uname').value;
+		var p = document.getElementById('pass').value;
+		if(u == "admin" && p == "password")
+		{
+			alert("login successful");
+		}
+		else
+		{
+			alert("login unsuccessful");
+		}
+	}
+</script>
+</body>
+</html>
